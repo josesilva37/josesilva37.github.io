@@ -14,5 +14,7 @@ div>div {
 
 #caixa {
     width: 400px;
-    box-sizing: content-box;
+    margin: auto;
+    border: 1px solid gold;
+    overflow: auto;
 }

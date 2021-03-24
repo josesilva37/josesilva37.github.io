@@ -48,7 +48,6 @@
     color: blanchedalmond;
 }
 
-.lista {
+.lista li {
     display: inline;
-    margin: 0 auto;
 }

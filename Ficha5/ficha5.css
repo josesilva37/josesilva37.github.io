@@ -1,0 +1,163 @@
+body {
+    margin: 0px;
+}
+
+* {
+    font-family: cursive;
+}
+
+.div1 {
+    color: white;
+    background-color: #424b5a;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    font-family: cursive;
+}
+
+.div1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.div2 {
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.div2 a {
+    background-color: teal;
+    width: fit-content;
+    border: 2px solid teal;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.div2 h1 {
+    color: #424b5a;
+}
+
+.div3 {
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.div3 h2 {
+    font-family: cursive;
+    color: #424b5a;
+    text-transform: uppercase;
+}
+
+.div3 h3 {
+    color: #424b5a;
+}
+
+.div3 li {
+    color: #a1aeb7;
+    list-style-type: square;
+}
+
+.div4 {
+    color: #a1aeb7;
+    background-color: #f2f5f7;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.div4 h2 {
+    font-family: cursive;
+    color: #424b5a;
+    text-transform: uppercase;
+}
+
+.div5 {
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.div5 h2 {
+    font-family: cursive;
+    color: #424b5a;
+    text-transform: uppercase;
+}
+
+.div5 tr td {
+    background-color: #f2f5f7;
+    color: #a1aeb7;
+    padding: 20px;
+}
+
+.div5 th {
+    background-color: #c2d1d9;
+    padding: 20px;
+    color: #424b5a;
+    border: 3px solid #a1aeb7;
+}
+
+.div6 {
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.div6 h2 {
+    font-family: cursive;
+    color: #424b5a;
+    text-transform: uppercase;
+}
+
+#nome {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#email {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#tel {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#assunto {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#textarea {
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+#submit {
+    color: white;
+    background-color: #424b5a;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: cursive;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}

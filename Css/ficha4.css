@@ -49,5 +49,10 @@
 }
 
 .lista li {
-    display: inline;
+    float: left;
+    margin: 25px;
+}
+
+.lista ul {
+    list-style-image: url('seta.gif');
 }

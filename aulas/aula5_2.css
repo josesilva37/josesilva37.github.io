@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    width: auto;
+    height: 100px;
+    border: 1px solid black;
+}

@@ -1,0 +1,74 @@
+.back {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.fundo {
+    margin: auto;
+    padding: 3px;
+    width: 750px;
+    height: auto;
+    background-color: white;
+}
+
+.top {
+    width: 750px;
+    content: url(cabecalho.jpg);
+}
+
+.bar {
+    height: 25px;
+    padding: 3px;
+    color: white;
+    text-transform: none;
+    width: auto;
+    background-color: green;
+}
+
+.bar a {
+    margin: 4px;
+}
+
+#text {
+    float: right;
+}
+
+#pesquisa {
+    float: right;
+    padding-right: 5px;
+}
+
+.corpo h1 {
+    padding-left: 15px;
+}
+
+.corpo p {
+    padding-left: 45px;
+}
+
+.lista ul {
+    float: right;
+    list-style-image: url(bullet.gif);
+    border: 1px solid black;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+
+#list_title {
+    background-color: gray;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.barra_fundo {
+    margin-top: 100px;
+    color: white;
+    padding: 5px;
+    background-color: gray;
+    text-align: center;
+}
+
+.barra_fundo a {
+    margin: 10px;
+}

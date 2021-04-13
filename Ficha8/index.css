@@ -1,4 +1,5 @@
 .container{
+    
     width: 50%;
     margin:auto;
     border:1px solid black;
@@ -29,16 +30,16 @@
     font-size: 3em;
 }
 .dados{
+    position:relative;
     width: 50%;
     margin:auto;
     display: flex;
-    justify-content: stretch;
 }
 .dados2{
+    position:relative;
     width: 50%;
     margin:auto;
     display: flex;
-    justify-content: center;
 }
 
 
@@ -48,4 +49,20 @@
     text-align: center;
     background-color: green;
     color:white;
+}
+
+
+.display{
+    border:1px solid black;
+    height: 50px;
+    width: 190px;
+    left:15px;
+    position: absolute;
+}
+.input{
+    position:absolute;
+    border:1px solid black;
+    width: 190px;
+    height: 50px;
+    left:15px;
 }

@@ -1,0 +1,112 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 800px;
+  height: 500px;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.head {
+  margin: 10px;
+  color: white;
+  background-color: #a52a2a;
+  border: 5px solid #a52a2a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.head h1 {
+  margin: 5px;
+}
+.head img {
+  margin: 5px;
+}
+
+.hangman {
+  position: relative;
+  padding-left: 35px;
+  padding-top: 50px;
+}
+.parts{
+  position:absolute;
+  left:38px;
+  bottom:7px;
+}
+
+#hang {
+  opacity: 0.5;
+}
+#w1 {
+  position: absolute;
+  bottom: 283px;
+  left: 37px;
+}
+
+#w2 {
+  position: absolute;
+  bottom: 283px;
+  left: 37px;
+}
+
+#w3 {
+  position: absolute;
+  left: 37px;
+  bottom: 283px;
+}
+
+#w4 {
+  position: absolute;
+  left: 37px;
+  bottom: 283px;
+}
+#w5 {
+  position: absolute;
+  left: 37px;
+  bottom: 283px;
+}
+#w6 {
+  position: absolute;
+  left: 37px;
+  bottom: 283px;
+}
+
+.letras {
+  position:relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  width: 400px;
+  height: 200px;
+  gap:0px;
+  position: absolute;
+  right: 40px;
+  top: 140px;
+  text-align: center;
+}
+.incorrect{
+  position:absolute;
+}
+.letras div {
+ border:1px solid black;
+ 
+}
+.espacos{
+  display:flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 25px;
+}
+.borda{
+  padding-right: 10px;
+  width: 25px;
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,42 @@
+.container{
+    height:500px;
+    border:1px solid black;
+}
+.container h1{
+    padding-left: 35px;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.input{
+    padding-top: 60px;
+    padding-left: 35px;
+    display:flex;
+    gap:5px;
+    color:grey;
+}
+#tarefa{
+
+    width: 150px;
+    height: 20px;
+    border: 1px solid grey;
+}
+#data{
+    width: 150px;
+    height: 20px;
+    border: 1px solid grey;
+}
+#bAdd{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.tarefas{
+    color:orange;
+    width: 50px;
+    height: 50px;
+}

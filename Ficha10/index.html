@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="dtsel.css" />
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,16 @@
         <h1>Lista de Tarefas</h1>
         <div class="input">
             <div  contentEditable = "true"  data-text="Nome da Tarefa..." id="tarefa"></div>
-            <div id="data">Data da tarefa</div>
+            <input name="dateTimePicker" id="data" placeholder="Data..." />
             <div id="bAdd">+</div>
         </div>
+        <div class="listaTarefas">
         <div class="tarefas">
 
         </div>
     </div>
+    </div>
+    <script src="dtsel.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

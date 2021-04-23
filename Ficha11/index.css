@@ -1,0 +1,71 @@
+body{
+    background-color: grey;
+}
+.container{
+    background-color: white;
+    border:3px solid black;
+    border-radius: 6px;
+    width: 600px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container img{
+    padding-top: 10px;
+    padding-left:30px;
+    width: 25%;
+    height: 25%;
+}
+
+.container h1{
+    padding-top: 10px;
+    padding-left: 30px;
+    color:rgb(143, 7, 7);
+    font-size: 50px;
+}
+.top{
+    display: flex;
+}
+.tamanho{
+    padding-left: 30px;
+    padding-top: 30px;
+    display:flex;
+    gap:20px;
+}
+.tamanho div{
+    margin-top: 15px;
+    border:1px solid black;
+    width: 100px;
+    height: 50%;
+}
+.tamanho p{
+    color:rgb(143, 7, 7);
+}
+.jogada{
+    padding-left: 30px;
+    padding-top: 5px;
+
+}
+.jogada p{
+    
+    color:rgb(143, 7, 7);
+}
+.jogada div{
+    border:1px solid black;
+    height: 15px;
+    width: 540px;
+}
+.tabuleiro{
+    padding-left: 190px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+}
+
+.quadrado{
+    background-color: black;
+    border:1px solid rgb(251, 255, 0);
+}

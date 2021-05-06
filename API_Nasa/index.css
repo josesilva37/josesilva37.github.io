@@ -1,0 +1,21 @@
+.input{
+    margin-left: 3px;
+    margin-top: 15px;
+    width: 75px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.but{
+    margin-left: 5px;
+    margin-top: 15px;
+    text-align: center;
+    width: 75px;
+    height: 15px;
+    border: 1px solid black;
+    background-color:lavender;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+}

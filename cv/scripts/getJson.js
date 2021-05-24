@@ -13,4 +13,5 @@ getjson();
 function show(data){
     nome.innerText = data.basics.name;
     idade.innerText = data.basics.idade;
+    label.innerText = data.basics.label;
 }

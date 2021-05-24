@@ -1,4 +1,6 @@
 var nome = document.getElementById("nome");
+var idade = document.getElementById("idade");
+var label = document.getElementById('label');
 
 async function getjson(){
     const response = await fetch("./cv.json");
@@ -10,5 +12,5 @@ async function getjson(){
 getjson();
 function show(data){
     nome.innerText = data.basics.name;
-
+    idade.innerText = data.basics.idade;
 }

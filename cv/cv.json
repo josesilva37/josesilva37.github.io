@@ -1,6 +1,7 @@
 {
   "basics": {
-    "name": "José Silva",
+    "idade": "20",
+     "name": "José Silva",
     "label": "Programador",
     "picture": "",
     "email": "jose.pedro.silva@ua.pt",
@@ -75,13 +76,11 @@
       "Javascript"
     ]
   }],
-  "languages": [{
-    "language": "Portugues",
-    "fluency": "Lingua raiz"
-  },{
-    "language": "Ingles",
-    "fluency": ""
-  }],
+  "languages": [
+    "English",
+    "Portuguese"
+  ],
+
   "interests": [{
     "name": "Wildlife",
     "keywords": [

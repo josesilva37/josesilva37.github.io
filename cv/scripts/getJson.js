@@ -3,6 +3,7 @@ var idade = document.getElementById("idade");
 var label = document.getElementById('label');
 var email = document.getElementById('email');
 var lingua = document.getElementById('lingua');
+var sobre = document.getElementById('sobre');
 
 async function getjson(){
     const response = await fetch("./cv.json");
@@ -18,5 +19,5 @@ function show(data){
     label.innerHTML = data.basics.label;
     email.innerHTML = data.basics.email;
     lingua.innerHTML = data.languages;
-
+    sobre.innerText = data.basics.desc;
 }

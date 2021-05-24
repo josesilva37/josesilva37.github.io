@@ -12,6 +12,6 @@ async function getjson(){
 getjson();
 function show(data){
     nome.innerText = data.basics.name;
-    idade.innerText = data.basics.idade;
-    label.innerText = data.basics.label;
+    idade.innerHTML = data.basics.idade;
+    label.innerHTML = data.basics.label;
 }

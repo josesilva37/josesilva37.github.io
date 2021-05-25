@@ -28,8 +28,10 @@ function show(data){
     lingua.innerHTML = data.languages;
     sobre.innerText = data.basics.desc;
     //educacao
-    
-    for(r of data.education){
-        containerEducation.insertAdjacentHTML('<div class="card"> <div class="row"><div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"><div class="card-body cc-education-header"><p>' + r.startDate + '-' + r.endDate+ '</p><div class="h5"></div></div></div></div></div>')
-    }
+     containerEducation.insertAdjacentHTML('<div class="card"> <div class="row"><div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"><div class="card-body cc-education-header"><p></p><div class="h5"></div></div></div></div></div>')
+
+    //for(r of data.education){
+     //   containerEducation.insertAdjacentHTML('<div class="card"> <div class="row"><div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"><div class="card-body cc-education-header"><p>' + r.startDate + '-' + r.endDate+ '</p><div class="h5"></div></div></div></div></div>')
+    //}
+
 }

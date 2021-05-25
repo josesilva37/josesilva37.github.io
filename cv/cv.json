@@ -24,15 +24,12 @@
   }
 ],
 
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  }],
+  "skills": [
+    "Web Development",
+    "Redes",
+    "Trabalho em equipa",
+    "Adaptabilidade"
+  ],
   "languages": [
     "English",
     "Portuguese"

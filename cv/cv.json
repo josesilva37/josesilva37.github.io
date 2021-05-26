@@ -25,11 +25,19 @@
   }
 ],
 
-  "skills": [
-    "Web Development",
-    "Redes",
-    "Trabalho em equipa",
-    "Adaptabilidade"
+  "skills": [{
+    "name":"Web Development",
+    "tipo":"tecnica"
+  },{
+    "name":"Redes",
+    "tipo":"tecnica"
+  },{
+    "name":"Trabalho em equipa",
+    "tipo":"softskill"
+  },{
+    "name":    "Adaptabilidade",
+    "tipo": "softskill"
+  }
   ],
   "languages": [
     "English",

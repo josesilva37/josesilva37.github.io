@@ -29,7 +29,7 @@
     "name":"Web Development",
     "tipo":"tecnica"
   },{
-    "name":"Redes",
+    "name":"Redes de computadores",
     "tipo":"tecnica"
   },{
     "name":"Trabalho em equipa",
@@ -47,7 +47,7 @@
   "projetos":[{
     "name":"DoThings",
     "desc":"Aplicação de gestão de tarefas, eventos e timeline",
-    "imgUrl": "https://imgur.com/a/JpHnA7C"
+    "imgUrl": "https://i.imgur.com/iutIchY.png"
   },{
 
   }

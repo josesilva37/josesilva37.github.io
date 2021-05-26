@@ -44,7 +44,13 @@
     "Portuguese"
   ],
 
-  "projetos":[
-    
+  "projetos":[{
+    "name":"DoThings",
+    "desc":"Aplicação de gestão de tarefas, eventos e timeline",
+    "imgUrl": "https://imgur.com/a/JpHnA7C"
+  },{
+
+  }
+
   ]
 }

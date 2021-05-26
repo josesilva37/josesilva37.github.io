@@ -10,18 +10,18 @@ var numero = document.getElementById('numero');
 //educacao
 var containerEducation = document.getElementById("container_education");
 //skills
-var listaSkills = document.getElementById="listaSkills";
+var listaSkills = document.getElementById = "listaSkills";
 
 
-async function getjson(){
+async function getjson() {
     const response = await fetch("./cv.json");
-    var data= await response.json();
+    var data = await response.json();
     console.log(data);
     show(data);
 }
 
 getjson();
-function show(data){
+function show(data) {
     //basico
     numero.innerHTML = data.basics.numero;
     email2.innerHTML = data.basics.email;
@@ -32,13 +32,11 @@ function show(data){
     lingua.innerHTML = data.languages;
     sobre.innerText = data.basics.desc;
     //educacao
-     //containerEducation.insertAdjacentHTML('<div class="card"> <div class="row"><div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"><div class="card-body cc-education-header"><p></p><div class="h5"></div></div></div></div></div>');
-
-    for(r of data.education){
-        containerEducation.insertAdjacentHTML('beforeend','<div class="card"> <div class="row"><div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"><div class="card-body cc-education-header"><p>' + r.startDate + '-' + r.endDate+ '</p><p>' + r.area+ '</p><p> ' +  r.studyType + ' </p><div class="h5"></div></div></div><p>'+ "Estudou no instituto " + r.institution + " no curso de " + r.area+'</p></div></div>');
+    for (r of data.education) {
+        containerEducation.insertAdjacentHTML('beforeend', '<div class="card"> <div class="row"><div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"><div class="card-body cc-education-header"><p>' + r.startDate + '-' + r.endDate + '</p><p>' + r.area + '</p><p> ' + r.studyType + ' </p><div class="h5"></div></div></div><p>' + "Estudou no instituto " + r.institution + " no curso de " + r.area + '</p></div></div>');
     }
-
-    for(t of data.skills){
-        listaSkills.insertAdjacentHTML('beforeend','<ul>'+t.name+ '</ul>');
+    //skills
+    for (t of data.skills) {
+        listaSkills.insertAdjacentHTML('beforeend', '<ul>' + t.name + '</ul>');
     }
 }

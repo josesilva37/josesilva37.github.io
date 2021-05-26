@@ -3,8 +3,10 @@ var nome = document.getElementById("nome");
 var idade = document.getElementById("idade");
 var label = document.getElementById('label');
 var email = document.getElementById('email');
+var email2 = document.getElementById('email2');
 var lingua = document.getElementById('lingua');
 var sobre = document.getElementById('sobre');
+var numero = document.getElementById('numero');
 //educacao
 var containerEducation = document.getElementById("container_education");
 //skills
@@ -21,6 +23,8 @@ async function getjson(){
 getjson();
 function show(data){
     //basico
+    numero.innerHTML = data.basics.numero;
+    email2.innerHTML = data.basics.email;
     nome.innerText = data.basics.name;
     idade.innerHTML = data.basics.idade;
     label.innerHTML = data.basics.label;

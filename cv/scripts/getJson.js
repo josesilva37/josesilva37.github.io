@@ -39,6 +39,6 @@ function show(data){
     }
 
     for(r of data.skills){
-        listaSkills.insertAdjacentHTML('beforeend','<ul>'+ r+ '</ul>');
+        listaSkills.insertAdjacentHTML('beforeend','<ul>'+ r.skills+ '</ul>');
     }
 }

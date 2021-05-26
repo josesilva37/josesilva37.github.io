@@ -10,7 +10,7 @@ var numero = document.getElementById('numero');
 //educacao
 var containerEducation = document.getElementById("container_education");
 //skills
-var listaSkills = document.getElementById = "listaSkills";
+var listaSkills = document.getElementById("listaSkills");
 
 
 async function getjson() {
@@ -37,6 +37,6 @@ function show(data) {
     }
     //skills
     for (t of data.skills) {
-        listaSkills.insertAdjacentHTML('beforeend', '<ul>' + t.name[0] + '</ul>');
+        listaSkills.insertAdjacentHTML('beforeend', '<ul>' + t.name + '</ul>');
     }
 }

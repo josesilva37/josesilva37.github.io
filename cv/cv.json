@@ -49,7 +49,9 @@
     "desc":"Aplicação de gestão de tarefas, eventos e timeline",
     "imgUrl": "https://i.imgur.com/iutIchY.png"
   },{
-
+    "name":"Arduino Pong Game",
+    "desc":"Pong Game multijogador utilizando arduino",
+    "imgUrl":"https://i.imgur.com/sMbgLz8.png"
   }
 
   ]

@@ -11,6 +11,8 @@ var numero = document.getElementById('numero');
 var containerEducation = document.getElementById("container_education");
 //skills
 var listaSkills = document.getElementById("listaSkills");
+//Portofolio
+var containerPortofolio = document.getElementById("containerPortofolio");
 
 
 async function getjson() {
@@ -38,5 +40,8 @@ function show(data) {
     //skills
     for (t of data.skills) {
         listaSkills.insertAdjacentHTML('beforeend', '<li>' + t.name + '</li>');
+    }
+    for(p of data.projetos){
+        containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ p.imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ p.name+ '</div> <p>'+ p.desc+'</p> </figcaption> </figure> </a></div>')
     }
 }

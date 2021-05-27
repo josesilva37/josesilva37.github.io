@@ -57,10 +57,12 @@
     "desc":"Jogo de Plataforma 2D"
   },{
     "name" : "Audio Stenography",
-    "desc": "Encoding a text message into an audio file and decoding it."
+    "desc": "Encoding a text message into an audio file and decoding it.",
+    "imgUrl": "https://i.imgur.com/WmixPFC.png"
   },{
     "name":"Account Manager",
-    "desc":" Gestor de contas em python com tkinter"
+    "desc":" Gestor de contas em python com tkinter",
+    "imgUrl":"https://i.imgur.com/F7iM7GH.png"
   }
     
   ]

@@ -52,7 +52,16 @@
     "name":"Arduino Pong Game",
     "desc":"Pong Game multijogador utilizando arduino",
     "imgUrl":"https://i.imgur.com/sMbgLz8.png"
+  },{
+    "name" : "SuperBob",
+    "desc":"Jogo de Plataforma 2D"
+  },{
+    "name" : "Audio Stenography",
+    "desc": "Encoding a text message into an audio file and decoding it."
+  },{
+    "name":"Account Manager",
+    "desc":" Gestor de contas em python com tkinter"
   }
-
+    
   ]
 }

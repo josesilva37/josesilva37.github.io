@@ -54,7 +54,8 @@
     "imgUrl":"https://i.imgur.com/sMbgLz8.png"
   },{
     "name" : "SuperBob",
-    "desc":"Jogo de Plataforma 2D"
+    "desc":"Jogo de Plataforma 2D",
+    "imgUrl":"https://i.imgur.com/xLWYXld.png"
   },{
     "name" : "Audio Stenography",
     "desc": "Encoding a text message into an audio file and decoding it.",

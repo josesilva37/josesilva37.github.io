@@ -43,11 +43,11 @@ function show(data) {
         listaSkills.insertAdjacentHTML('beforeend', '<li>' + t.name + '</li>');
     }
     console.log(Object.keys(data.projetos).length)
-  
+    var lenght =Object.keys(data.projetos).length/2; 
     if(Object.keys(data.projetos).length > 1){
-        for(var i=0;i<(Object.keys(data.projetos).length)/2;i++){
-            containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos.imgUrl[i] +'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos.name[i]+ '</div> <p>'+ data.projetos.desc[i]+'</p> </figcaption> </figure> </a></div>');
-            containerPortofolio2.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos.imgUrl[i+1]+'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos.name[i]+1+ '</div> <p>'+ data.projetos.desc[i+1]+'</p> </figcaption> </figure> </a></div>');
+        for(var i=0;i<lenght;i++){
+            containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos[i].imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos[i].name+ '</div> <p>'+ data.projetos[i].desc+'</p> </figcaption> </figure> </a></div>');
+           // containerPortofolio2.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos.imgUrl[i+1]+'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos.name[i]+1+ '</div> <p>'+ data.projetos.desc[i+1]+'</p> </figcaption> </figure> </a></div>');
         }
     }else{
         for(p of data.projetos){

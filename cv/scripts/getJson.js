@@ -43,15 +43,17 @@ function show(data) {
         listaSkills.insertAdjacentHTML('beforeend', '<li>' + t.name + '</li>');
     }
     console.log(Object.keys(data.projetos).length)
-    var lenght =Object.keys(data.projetos).length/2; 
+    var lenght =Object.keys(data.projetos).length; 
     if(Object.keys(data.projetos).length > 1){
-        for(var i=0;i<lenght;i+2){
-            if(data.projetos[i] != null){
+        for(var i=0;i<lenght;i++){
+            if(i%2==0){
                 containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos[i].imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos[i].name+ '</div> <p>'+ data.projetos[i].desc+'</p> </figcaption> </figure> </a></div>');
-            }
-            if(data.projetos[i+1] !=null){
+            }else{
                 containerPortofolio2.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos[i+1].imgUrl+'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos[i+1].name+ '</div> <p>'+ data.projetos[i+1].desc+'</p> </figcaption> </figure> </a></div>');
+
             }
+    
+
         }
     }else{
         for(p of data.projetos){

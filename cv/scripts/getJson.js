@@ -43,8 +43,18 @@ function show(data) {
         listaSkills.insertAdjacentHTML('beforeend', '<li>' + t.name + '</li>');
     }
     console.log(Object.keys(data.projetos).length)
-    for(p of data.projetos){
-        containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ p.imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ p.name+ '</div> <p>'+ p.desc+'</p> </figcaption> </figure> </a></div>');
+  
+    if(Object.keys(data.projetos).length > 1){
+        for(var i=0;i<(Object.keys(data.projetos).length)/2;i++){
+            containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ data.projetos.imgUrl[i] +'" alt="Image" /> <figcaption> <div class="h4">'+ data.projetos.name[i]+ '</div> <p>'+ data.projetos.desc[i]+'</p> </figcaption> </figure> </a></div>');
+            //containerPortofolio2.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ p.imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ p.name+ '</div> <p>'+ p.desc+'</p> </figcaption> </figure> </a></div>');
 
+        }
+    }else{
+        for(p of data.projetos){
+            containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ p.imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ p.name+ '</div> <p>'+ p.desc+'</p> </figcaption> </figure> </a></div>');
+    
+        }
     }
+    
 }

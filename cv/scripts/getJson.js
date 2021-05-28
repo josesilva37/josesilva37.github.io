@@ -43,7 +43,7 @@ function show(data) {
         listaSkills.insertAdjacentHTML('beforeend', '<li>' + t.name + '</li>');
     }
     console.log(Object.keys(data.projetos).length)
-    var lenght =Object.keys(data.projetos).length-1; 
+    var lenght =Object.keys(data.projetos).length; 
     if(Object.keys(data.projetos).length > 1){
         for(var i=0;i<lenght;i++){
             if(i===0){

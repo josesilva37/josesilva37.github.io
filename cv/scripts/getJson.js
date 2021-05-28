@@ -13,6 +13,7 @@ var containerEducation = document.getElementById("container_education");
 var listaSkills = document.getElementById("listaSkills");
 //Portofolio
 var containerPortofolio = document.getElementById("containerPortofolio");
+var containerPortofolio2 = document.getElementById("containerPortofolio2");
 
 
 async function getjson() {
@@ -41,7 +42,9 @@ function show(data) {
     for (t of data.skills) {
         listaSkills.insertAdjacentHTML('beforeend', '<li>' + t.name + '</li>');
     }
+    console.log(Object.keys(data.projetos).length)
     for(p of data.projetos){
-        containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ p.imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ p.name+ '</div> <p>'+ p.desc+'</p> </figcaption> </figure> </a></div>')
+        containerPortofolio.insertAdjacentHTML('beforeend','<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <a href="#web-development"> <figure class="cc-effect"><img src="'+ p.imgUrl +'" alt="Image" /> <figcaption> <div class="h4">'+ p.name+ '</div> <p>'+ p.desc+'</p> </figcaption> </figure> </a></div>');
+
     }
 }
